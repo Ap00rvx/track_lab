@@ -58,10 +58,11 @@ class _HomePageState extends State<HomePage> {
             );
           }
           return const Center(
-            child: Text('An error occurred. Please try again later'),
+            child: Text('An error occurred. Please try again later :)'),
           );
         },
       ),
     );
   }
+
 }
