@@ -4,4 +4,6 @@ class AppUrls {
   static const String REGISTER = "register";
   static const String USER = "/api/u/";
   static const String PROFILE = "profile"; 
+  static const String ORG = "/operable/org/"; 
+
 }
