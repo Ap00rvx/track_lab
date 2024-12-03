@@ -5,6 +5,7 @@ import 'package:avatar_stack/avatar_stack.dart';
 import 'package:flutter/material.dart';
 import 'package:tracklab/locator.dart';
 import 'package:tracklab/src/resources/home/home_repository.dart';
+import 'package:tracklab/src/ui/home/organisation/projects_slider.dart';
 
 class OrgSpace extends StatefulWidget {
   const OrgSpace({super.key});
@@ -53,6 +54,7 @@ class _OrgSpaceState extends State<OrgSpace> {
           ]),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
             Padding(
@@ -160,6 +162,19 @@ class _OrgSpaceState extends State<OrgSpace> {
                       ),
                     ),
                   ]),
+            ),
+            const SizedBox(height: 10),
+            const Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Text(
+                "Org Projects",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: ProjectsSlider(),
             )
           ],
         ),

@@ -5,5 +5,6 @@ class AppUrls {
   static const String USER = "/api/u/";
   static const String PROFILE = "profile"; 
   static const String ORG = "/operable/org/"; 
+  static const String PROJECTS = "p/allProjects"; 
 
 }
